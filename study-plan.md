@@ -17,10 +17,79 @@ Master **Angular v20** with focus on:
 - Testing & Architecture
 
 ---
-
-## 📅 Phases (with estimated hours)
+## 📊 Time Overview
+- **Stage 1 (Refresher)** — 30–36 hrs  
+- **Stage 2 (Deep Dive)** — 62–84 hrs  
+- **Total:** 92–120 hrs (~14–18 weeks at 6–8 hrs/week)
 
 ---
+
+# 🟢 STAGE 1 — REFRESHER: Core Angular Essentials (30–36 hrs)
+
+> Goal: Relearn **modern Angular v20 basics** using **standalone components**, new control flow, Signals-friendly APIs, and fill any knowledge gaps.
+
+### 📌 Topics Checklist
+
+- [ ] Angular CLI & project setup (`ng new --standalone --strict`)  
+- [ ] Standalone components (`standalone: true`) & `bootstrapApplication()`  
+- [ ] Templates & control flow: interpolation, property/event binding, `@if`, `@for`  
+- [ ] Two-way binding
+  - [ ] `[(ngModel)]` (template-driven forms)  
+  - [ ] `model()` API (standalone two-way binding with Signals)  
+- [ ] Content projection (`<ng-content>`) & named slots  
+- [ ] Structural vs attribute directives — built-in (`*ngIf`, `*ngFor`) + custom  
+- [ ] Host bindings & listeners (`@HostBinding`, `@HostListener`)  
+- [ ] Lifecycle hooks (`ngOnInit`, `ngOnChanges`, `ngAfterViewInit`, etc.)  
+- [ ] View & Content queries: `@ViewChild`, `@ViewChildren`, `@ContentChild`, `@ContentChildren`  
+- [ ] Template reference variables (`#ref`) and `ViewContainerRef` basics  
+- [ ] Pipes: built-in (`async`, `date`, `currency`) & custom (pure vs impure)  
+- [ ] Forms
+  - [ ] Template-driven basics  
+  - [ ] Reactive Forms (`FormGroup`, `FormControl`, `FormArray`) + validation  
+  - [ ] `ControlValueAccessor` for custom form controls  
+- [ ] HttpClient basics: GET/POST, HttpParams, headers, interceptors, error handling  
+- [ ] Router basics: `routerLink`, `Router.navigate`, route params, child routes  
+- [ ] Component communication (`input()`, `output()`, `model()`)  
+- [ ] Simple state patterns: local component state vs service-based shared state  
+- [ ] Basics of change detection & `OnPush`  
+- [ ] Basic testing: TestBed, unit tests for components & services  
+- [ ] Accessibility basics (ARIA roles, keyboard navigation)  
+- [ ] Styling: global vs component styles, `ViewEncapsulation`
+
+
+### 🎯 Mini-Projects (Refresher)
+✅ **Project A — Todo Manager (6–8 hrs)**
+
+- CRUD tasks with localStorage persistence
+
+- Custom directive: [highlightOnHover]
+
+- Custom pipe: truncate
+
+- Content projection with <todo-list> wrapper
+
+- Test a component + service
+
+- API: none (local only)
+
+---
+
+✅ **Project B — Weather Dashboard (6–8 hrs)**
+
+- Input city → fetch weather with HttpClient
+
+- Async pipe for observables
+
+- Toggle °C/°F using a custom pipe
+
+- HttpInterceptor to inject API key
+
+---
+
+# 🔵 STAGE 2 — DEEP DIVE: Advanced Angular (62–84 hrs)
+
+> Goal: Senior-level mastery of **Signals, RxJS interop, DI, SSR, Zoneless, Testing & Architecture**.
+
 
 ### ✅ Phase 1 — Signals Mastery (Deep Dive)  
 ⏱ *9–12 hrs*
