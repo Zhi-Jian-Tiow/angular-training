@@ -1,59 +1,67 @@
-# TodoManager
+# Todo Manager — Starter (Refresher)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.0.
+## Goal
 
-## Development server
+Build a local-first Todo Manager to practice modern Angular fundamentals: standalone components, Signals, Dependency Injection, component communication, forms, ControlValueAccessor, content projection, custom directives/pipes, and basic unit testing.
 
-To start a local development server, run:
+## Functional Requirements
 
-```bash
-ng serve
-```
+- List tasks with title, description (optional), priority, tags, due date, status (active/completed), createdAt/updatedAt, and `order`.
+- Create new tasks via quick-add and full form.
+- Edit, delete, toggle complete.
+- Bulk actions (select multiple → delete/complete).
+- Filter (All / Active / Completed), search, sort, manual reorder.
+- Persist tasks in localStorage.
+- Import / Export JSON (Merge / Replace).
+- Panel container supporting content projection (header/body/footer).
+- Truncate long titles (pipe).
+- Highlight item on hover (directive).
+- Tags input implemented as a ControlValueAccessor.
+- Unit tests for service and at least one component.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## What you’ll implement (high-level steps)
 
-## Code scaffolding
+1. Initialize Angular project (standalone-first, strict mode).
+2. Copy starter scaffold into your project.
+3. Implement `TodoService` with persistence, import/export, and CRUD APIs.
+4. Build standalone components:
+   - Header, AddTodo (quick-add), TodoList, TodoItem, TodoForm, ImportExport, Panel.
+5. Use Signals for state inside service or store; expose computed signals for filtered list.
+6. Wire component communication (data down, events up).
+7. Implement Reactive Forms for TodoForm; implement tags control as ControlValueAccessor.
+8. Implement truncate pipe and highlight directive.
+9. Implement manual reorder and bulk actions.
+10. Add unit tests for the service and one component.
+11. Write brief usage notes in README.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## What you'll learn
 
-```bash
-ng generate component component-name
-```
+- Standalone components & component composition
+- Signals (`signal`, `computed`, `effect`) in real apps
+- Dependency Injection & service design
+- Component inputs & outputs, event-driven design
+- Reactive Forms & validation
+- ControlValueAccessor (custom form control)
+- Content projection (slots) & reusable container patterns
+- Custom directives & pipes
+- Local persistence & JSON import/export
+- Unit testing services and components
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Files provided
 
-```bash
-ng generate --help
-```
+- `index.html`, `styles.css` (global)
+- `data/seed.json` (starter tasks)
+- `src/app/models/todo.ts` (interface)
+- Static templates for components (HTML + CSS)
+- utils: instructions for pipe & directive
+- tests: instructions for unit tests
 
-## Building
+## How to get started (student checklist)
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- [ ] Create Angular project (standalone, strict)
+- [ ] Copy scaffold files into project
+- [ ] Implement `TodoService` and wire persistence
+- [ ] Build components and wire state via Signals
+- [ ] Implement forms, custom tags control, pipe & directive
+- [ ] Implement import/export & reorder
+- [ ] Add unit tests

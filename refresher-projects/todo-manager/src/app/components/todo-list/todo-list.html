@@ -1,0 +1,22 @@
+<ul class="todo-list" id="task-list">
+  <!-- Repeat this li for each task (rendered by Angular) -->
+  <li class="task-row">
+    <div class="task-left">
+      <!-- Checkbox for complete -->
+      <input type="checkbox" class="task-checkbox" aria-label="Mark task complete" />
+      <div class="task-content">
+        <div class="task-title">[TASK_TITLE]</div>
+        <div class="todo-meta">
+          <span class="chip">[PRIORITY]</span>
+          <span class="chip">[TAG]</span>
+          <span class="small">Due: [DUE_DATE]</span>
+        </div>
+      </div>
+    </div>
+    <div class="task-actions">
+      <button class="ghost">Edit</button>
+      <button class="ghost danger">Delete</button>
+    </div>
+  </li>
+  <!-- end repeat -->
+</ul>

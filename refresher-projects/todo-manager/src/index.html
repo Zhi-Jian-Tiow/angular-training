@@ -1,51 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, viewport-fit=cover"
-    />
-    <title>Todo Manager</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <div class="app">
+<head>
+  <meta charset="utf-8" />
+  <title>Todo Manager - Starter</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app-root">
+    <!-- Angular will mount here -->
+    <!-- The app layout (below) maps to the component files in /src/app/components/ -->
+    <div class="container">
       <!-- Header -->
-      <header class="app-header">
-        <!-- include header.html markup here at build time or via your framework -->
-        <nav class="nav">
-          <a class="brand" href="#" aria-label="Home">✅ Todo Manager</a>
-          <ul class="nav-links">
-            <li><a href="#" data-nav="home">Home</a></li>
-            <li><a href="#" data-nav="import-export">Import/Export</a></li>
-            <li><a href="#" data-nav="settings">Settings</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <!-- Main content -->
-      <main class="app-main">
-        <!-- mount your page templates here (home/import-export/settings) -->
-        <div class="container">
-          <h1 class="visually-hidden">Todo Manager</h1>
-          <!-- Placeholder: you will render the Home page by default -->
-          <p class="muted">
-            Replace this content with your routed page (Home by default).
-          </p>
-        </div>
-      </main>
-
-      <!-- Footer -->
-      <footer class="app-footer">
-        <small>© <span data-year></span> Todo Manager</small>
-      </footer>
+      <!-- include: src/app/components/header/header.html -->
+      <!-- Quick add -->
+      <!-- include: src/app/components/add-todo/add-todo.html -->
+      <!-- Main panel -->
+      <!-- include: src/app/components/panel/panel.html (wrap todo-list) -->
+      <!-- Import/Export -->
+      <!-- include: src/app/components/import-export/import-export.html -->
     </div>
-
-    <script>
-      // purely cosmetic year update; remove if you don't want any JS
-      document.querySelector('[data-year]').textContent =
-        new Date().getFullYear();
-    </script>
-  </body>
+  </div>
+</body>
 </html>
