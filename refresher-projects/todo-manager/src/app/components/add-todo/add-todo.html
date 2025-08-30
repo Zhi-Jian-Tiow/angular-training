@@ -4,6 +4,9 @@
     type="text"
     placeholder="Enter a new task title..."
     aria-label="New task title"
+    [(ngModel)]="title"
   />
-  <button id="quick-add-btn" class="primary">Add Task</button>
+  <button id="quick-add-btn" class="primary" (click)="onAddTask()">
+    Add Task
+  </button>
 </div>

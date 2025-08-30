@@ -3,16 +3,16 @@
   <div class="task-left">
     <input type="checkbox" class="task-checkbox" aria-label="Toggle complete" />
     <div class="task-content">
-      <div class="task-title">[TASK_TITLE]</div>
+      <div class="task-title">{{taskTitle()}}</div>
       <div class="todo-meta">
-        <span class="chip">[PRIORITY]</span>
-        <span class="chip">[TAG]</span>
-        <span class="small">[DUE_DATE]</span>
+        <span class="chip">{{priority()}}</span>
+        <span class="chip">{{tagStrings()}}</span>
+        <span class="small">{{dueDate()}}</span>
       </div>
     </div>
   </div>
   <div class="task-actions">
     <button class="ghost">Edit</button>
-    <button class="ghost danger">Delete</button>
+    <button class="ghost danger" (click)="onDelete()">Delete</button>
   </div>
 </li>
